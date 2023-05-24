@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bloodlab.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_turnRatingFragment"
+            app:destination="@id/turnRatingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addressFragment"
+            app:destination="@id/addressFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.bloodlab.NewsFragment"
+        android:label="NewsFragment" />
+    <fragment
+        android:id="@+id/turnRatingFragment"
+        android:name="com.example.bloodlab.TurnRatingFragment"
+        android:label="TurnRatingFragment" />
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.example.bloodlab.AddressFragment"
+        android:label="AddressFragment" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.bloodlab.GalleryFragment"
+        android:label="GalleryFragment" />
+</navigation>
