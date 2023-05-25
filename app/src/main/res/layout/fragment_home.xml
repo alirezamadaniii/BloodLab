@@ -58,12 +58,14 @@
                             app:layout_constraintTop_toTopOf="@+id/appCompatImageView" />
 
                         <com.google.android.material.textview.MaterialTextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            android:text="در این بخش میتوانید ........"
                             android:fontFamily="@font/shabnam_light"
+                            android:layout_marginStart="12dp"
+                            android:text="در این بخش میتوانید با پر کردن اطلاعات شخصی و مشاهده تاریخ های قابل رزرو، نوبت اهدا خون خود را انتخاب و رزرو فرمایید"
+                            android:textColor="@color/white"
                             app:layout_constraintEnd_toEndOf="@+id/materialTextView"
+                            app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
 
                         <com.google.android.material.button.MaterialButton
@@ -155,6 +157,7 @@
                 android:layout_margin="16dp" />
 
             <include
+                android:id="@+id/card_about_us"
                 layout="@layout/card_about_us"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -163,6 +166,7 @@
 
 
             <include
+                android:id="@+id/card_suggestion"
                 layout="@layout/card_sugestion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

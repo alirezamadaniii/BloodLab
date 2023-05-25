@@ -1,14 +1,15 @@
 package com.example.bloodlab
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.bloodlab.databinding.FragmentHomeBinding
-import com.example.bloodlab.databinding.FragmentNewsBinding
+
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -38,8 +39,28 @@ class HomeFragment : Fragment() {
         binding.cardGallery.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_galleryFragment)
         }
+
+        binding.cardAboutUs.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_aboutUsFragment)
+        }
+
+        binding.cardSuggestion.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_suggestionFragment)
+        }
     }
 
+    override fun onResume() {
+        super.onResume()
 
+        if (view == null) return
+        requireView().isFocusableInTouchMode = true
+        requireView().requestFocus()
+        requireView().setOnKeyListener { v: View?, keyCode: Int, event: KeyEvent ->
+            if (event.action == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK) {
+                return@setOnKeyListener true
+            }
+            false
+        }
+    }
 
 }
