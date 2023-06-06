@@ -12,7 +12,7 @@
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
-        android:supportsRtl="false"
+        android:supportsRtl="true"
         android:theme="@style/Theme.BloodLab"
         tools:targetApi="31">
         <activity

@@ -27,6 +27,12 @@
         <action
             android:id="@+id/action_homeFragment_to_suggestionFragment"
             app:destination="@id/suggestionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_phoneRatingFragment"
+            app:destination="@id/phoneRatingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_moreInfoFragment"
+            app:destination="@id/moreInfoFragment" />
     </fragment>
     <fragment
         android:id="@+id/newsFragment"
@@ -61,4 +67,12 @@
             android:id="@+id/action_splashScreenFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/phoneRatingFragment"
+        android:name="com.example.bloodlab.PhoneRatingFragment"
+        android:label="PhoneRatingFragment" />
+    <fragment
+        android:id="@+id/moreInfoFragment"
+        android:name="com.example.bloodlab.MoreInfoFragment"
+        android:label="MoreInfoFragment" />
 </navigation>
