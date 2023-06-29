@@ -68,6 +68,7 @@
 
 
         <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:overScrollMode="never"
@@ -252,6 +253,14 @@
                             android:layout_columnWeight="1"
                             android:layout_margin="16dp" />
 
+
+                        <include
+                            android:id="@+id/card_gallery_video"
+                            layout="@layout/card_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="16dp" />
 
 
                         <include

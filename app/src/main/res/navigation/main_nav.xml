@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_homeFragment_to_moreInfoFragment"
             app:destination="@id/moreInfoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_videoGalleryFragment"
+            app:destination="@id/videoGalleryFragment" />
     </fragment>
     <fragment
         android:id="@+id/newsFragment"
@@ -75,4 +78,25 @@
         android:id="@+id/moreInfoFragment"
         android:name="com.example.bloodlab.MoreInfoFragment"
         android:label="MoreInfoFragment" />
+    <fragment
+        android:id="@+id/videoGalleryFragment"
+        android:name="com.example.bloodlab.VideoGalleryFragment"
+        android:label="VideoGalleryFragment" >
+        <action
+            android:id="@+id/action_videoGalleryFragment_to_firstVideoFragment"
+            app:destination="@id/firstVideoFragment" />
+        <action
+            android:id="@+id/action_videoGalleryFragment_to_secondViddeoFragment"
+            app:destination="@id/secondViddeoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstVideoFragment"
+        android:name="com.example.bloodlab.FirstVideoFragment"
+        android:label="fragment_first_video"
+        tools:layout="@layout/fragment_first_video" />
+    <fragment
+        android:id="@+id/secondViddeoFragment"
+        android:name="com.example.bloodlab.SecondViddeoFragment"
+        android:label="fragment_second_viddeo"
+        tools:layout="@layout/fragment_second_viddeo" />
 </navigation>

@@ -63,6 +63,10 @@ class HomeFragment : Fragment() {
         binding.cardConditions.setOnClickListener {
            findNavController().navigate(R.id.action_homeFragment_to_moreInfoFragment)
         }
+
+        binding.cardGalleryVideo.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_videoGalleryFragment)
+        }
     }
 
     private fun onSetUpSlider(){
